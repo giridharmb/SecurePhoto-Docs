@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy – Secure Photo</title>
+  <meta name="description" content="How Secure Photo handles your photos and data: encrypted on your device, synced only to your own iCloud, never collected by us.">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <a class="brand" href="./"><img src="assets/icon.png" alt=""><span>Secure Photo</span></a>
+      <nav class="links">
+        <a href="./">Home</a>
+        <a href="privacy.html" aria-current="page">Privacy</a>
+        <a href="support.html">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap narrow doc">
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective October 27, 2026</p>
+
+    <div class="callout">
+      <p><strong>In short:</strong> Secure Photo does not collect, sell or share any of your data. Your photos are encrypted on your device and, if iCloud Sync is on, stored in your own private iCloud account. We, the developers, cannot see them.</p>
+    </div>
+
+    <nav class="toc" aria-label="Contents">
+      <strong>Contents</strong>
+      <ol>
+        <li><a href="#collect">What we collect</a></li>
+        <li><a href="#device">Photos on your device</a></li>
+        <li><a href="#icloud">iCloud sync</a></li>
+        <li><a href="#permissions">Permissions the app asks for</a></li>
+        <li><a href="#backup">Encrypted backups</a></li>
+        <li><a href="#delete">Deleting your data</a></li>
+        <li><a href="#children">Children</a></li>
+        <li><a href="#changes">Changes to this policy</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="collect">1. What we collect</h2>
+    <p>Nothing. Secure Photo has no accounts, no analytics, no advertising, no crash-reporting services and no third-party code. The developers run no servers, and the app never sends your photos, labels or any information about you or your device to us or to anyone else.</p>
+
+    <h2 id="device">2. Photos on your device</h2>
+    <ul>
+      <li>Each photo and its thumbnail is encrypted with AES-256-GCM before it is written to storage, and your list of photos, albums and labels is encrypted the same way.</li>
+      <li>The encryption key is generated on your device and kept in the iOS Keychain.</li>
+      <li>Files also use iOS Data Protection, so they can't be read while your device is locked.</li>
+      <li>The app's screen is hidden in the app switcher and while the screen is being recorded or mirrored.</li>
+    </ul>
+
+    <h2 id="icloud">3. iCloud sync</h2>
+    <p>Photos you add to Secure Photo are <strong>automatically synced to your own private iCloud account</strong> using Apple's CloudKit private database. Here is what that means:</p>
+    <ul>
+      <li>Photos and thumbnails are uploaded only in their already-encrypted form. Apple stores encrypted files it cannot open with this app's key.</li>
+      <li>Dates, album names, hashtags, colors, favorites, ratings and saved filters are stored in CloudKit's end-to-end encrypted fields.</li>
+      <li>So that your other devices can open your photos, a copy of the vault key is stored in an end-to-end encrypted field in your private iCloud database. Apple's end-to-end encryption means it is protected by keys tied to your devices and Apple ID.</li>
+      <li>Data in your private iCloud database is visible only to your Apple ID. The developers have no access to it.</li>
+      <li>Synced photos count toward your iCloud storage. By default, syncing uses Wi-Fi only; you can allow cellular data in Settings.</li>
+      <li>You can turn iCloud Sync off at any time in the app's Settings. Your photos then stay only on that device.</li>
+    </ul>
+    <p>Apple's handling of iCloud data is covered by <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple's Privacy Policy</a>.</p>
+
+    <h2 id="permissions">4. Permissions the app asks for</h2>
+    <h3>Face ID</h3>
+    <p>Used to unlock the app. Face ID is handled entirely by iOS; Secure Photo only receives "unlocked" or "not unlocked" and never sees any face data. If Face ID isn't set up, your device passcode is used instead.</p>
+    <h3>Photo Library</h3>
+    <p>Used only to do what you ask:</p>
+    <ul>
+      <li>import the photos or albums you choose,</li>
+      <li>delete the originals from your library when you choose "Import &amp; Delete" (iOS asks you to confirm, and they go to Recently Deleted in the Photos app),</li>
+      <li>save photos back to your library when you choose.</li>
+    </ul>
+    <p>Secure Photo doesn't read or upload anything from your library that you haven't chosen.</p>
+    <h3>Location</h3>
+    <p>Secure Photo never asks for your location. If a photo already contains location data from when it was taken, the Info panel shows it. That location is sent to Apple Maps only if you tap "Open in Maps".</p>
+
+    <h2 id="backup">5. Encrypted backups</h2>
+    <p>You can export your vault to a single backup file protected by a password you choose. The file is encrypted on your device and saved wherever you put it (for example the Files app or your computer). Your password is never stored or sent anywhere, so <strong>a forgotten backup password can't be recovered</strong>.</p>
+
+    <h2 id="delete">6. Deleting your data</h2>
+    <ul>
+      <li><strong>Individual photos:</strong> deleting moves them to Recently Deleted on all your devices. After 30 days, or when you choose "Delete" there, they are removed permanently from the app and from your iCloud.</li>
+      <li><strong>Everything on one device:</strong> deleting the app removes all its data from that device.</li>
+      <li><strong>Everything in iCloud:</strong> delete your photos in the app while iCloud Sync is on, then empty Recently Deleted. You can also manage app data stored in iCloud from iOS Settings › [your name] › iCloud.</li>
+    </ul>
+
+    <h2 id="children">7. Children</h2>
+    <p>Secure Photo does not collect personal information from anyone, including children.</p>
+
+    <h2 id="changes">8. Changes to this policy</h2>
+    <p>If this policy changes, the new version will be posted on this page with a new effective date. Any change that affects how your data is handled will be described in the app's release notes.</p>
+
+    <h2 id="contact">9. Contact</h2>
+    <p>Questions about privacy? Open an issue on our <a href="https://github.com/giridharmb/SecurePhoto-Docs/issues" rel="noopener">support page on GitHub</a>. Please don't include photos or personal information in public issues.</p>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <span>© 2026 Secure Photo</span>
+      <nav><a href="./">Home</a><a href="support.html">Support</a></nav>
+    </div>
+  </footer>
+</body>
+</html>
